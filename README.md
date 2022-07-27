@@ -2,10 +2,8 @@
 
 ## Setup
 
-Using git, move to your local repository and clone the project
 ```
-cd /your/local/repo/here
-git clone https://github.com/Francisco-Pina/volosAPI.git
+pip install --upgrade volosAPI
 ```
 
 
@@ -16,11 +14,7 @@ The volosAPI is a tool that allows users to access data from the Volos software 
 To start, you can initiate the class with your API key and the strategy ID given by Volos 
 
 ```python
-import sys
-
-sys.path.insert(0, r'C:\Users\your\repo\here\volosAPI') # change to your local path
-
-from volosAPI import volosAPI
+from volosAPI.volosAPI import volosAPI
 
 vs = volosAPI(api_key="your_api_key_here")
 ```
